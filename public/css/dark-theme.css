@@ -1,0 +1,209 @@
+/* Dark Gradient Theme */
+:root {
+    --primary-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    --secondary-gradient: linear-gradient(135deg, #4776E6 0%, #8E54E9 100%);
+    --dark-bg: #0f172a;
+    --darker-bg: #0b1120;
+    --card-bg: #1e293b;
+    --text-light: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-color: #7c3aed;
+  }
+  
+  /* Body and Main Background */
+  body {
+    background: var(--dark-bg) !important;
+    color: var(--text-light) !important;
+  }
+  
+  /* Navbar Gradient */
+  .main-header.navbar {
+    background: var(--primary-gradient) !important;
+    border-bottom: none !important;
+  }
+  
+  /* Sidebar Gradient */
+  .main-sidebar {
+    background: var(--darker-bg) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* Brand Logo */
+  .brand-link {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* Cards */
+  .card {
+    background: var(--card-bg) !important;
+    border: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    border-radius: 0.5rem !important;
+  }
+  
+  .card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  /* Tables */
+  .table {
+    color: var(--text-light) !important;
+  }
+  
+  .table-bordered {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+  }
+  
+  /* Form Elements */
+  .form-control {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-light) !important;
+  }
+  
+  .form-control:focus {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.25) !important;
+  }
+  
+  .select2-container--default .select2-selection--single {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-light) !important;
+  }
+  
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--text-light) !important;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background: var(--secondary-gradient) !important;
+    border: none !important;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #3a66d6 0%, #7d43e9 100%) !important;
+  }
+  
+  .btn-secondary {
+    background-color: #334155 !important;
+    border: none !important;
+    color: var(--text-light) !important;
+  }
+  
+  /* Alerts */
+  .alert {
+    border: none !important;
+    color: var(--text-light) !important;
+  }
+  
+  .alert-success {
+    background-color: rgba(5, 150, 105, 0.2) !important;
+    border-left: 4px solid #059669 !important;
+  }
+  
+  .alert-danger {
+    background-color: rgba(220, 38, 38, 0.2) !important;
+    border-left: 4px solid #dc2626 !important;
+  }
+  
+  /* Badges */
+  .badge-primary {
+    background: var(--secondary-gradient) !important;
+  }
+  
+  /* Small Boxes */
+  .small-box {
+    border-radius: 0.5rem !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  .small-box .icon {
+    color: rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  /* Login Page */
+  .login-page {
+    background: var(--dark-bg) !important;
+  }
+  
+  .login-box, .register-box {
+    width: 400px !important;
+  }
+  
+  .login-card-body, .register-card-body {
+    background: var(--card-bg) !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  .login-logo a, .register-logo a {
+    color: var(--text-light) !important;
+    font-weight: 600 !important;
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--darker-bg);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6d28d9;
+  }
+
+  /* Register Page Specific Styles */
+.register-page {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+}
+
+.register-box, .login-box {
+  width: 400px !important;
+}
+
+.register-card-body, .login-card-body {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+.register-logo a, .login-logo a {
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* iCheck customization for dark theme */
+[class*="icheck-"] > input:first-child:checked + label::before,
+[class*="icheck-"] > input:first-child:checked + input[type="hidden"] + label::before {
+  background-color: #7c3aed !important;
+  border-color: #7c3aed !important;
+}
+
+[class*="icheck-"] > label {
+  color: #94a3b8 !important;
+}
+
+[class*="icheck-"] > label:hover {
+  color: white !important;
+}
