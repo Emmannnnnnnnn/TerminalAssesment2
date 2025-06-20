@@ -116,16 +116,16 @@ Make sure the following directories are writable:
 Default Login Credentials
 
 Admin Account
-- Username: admin@school.edu
-- Password: Admin@123
+- Username: admin123@ntc.edu.ph
+- Password: admin123NTC
 
 Teacher Account
-- Username: teacher@school.edu
-- Password: Teacher@123
+- Username: teacher123@ntc.edu.ph
+- Password: teacher123NTC
 
 Student Account
-- Username: student@school.edu
-- Password: Student@123
+- Username: james@ntc.edu.ph
+- Password: james0918
 
 Note: Replace these default credentials after the first login for security reasons.
 
