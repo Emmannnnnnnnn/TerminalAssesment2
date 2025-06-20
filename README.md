@@ -66,3 +66,125 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - json (enabled by default - don't turn it off)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+Installation Steps
+
+1. Clone the repository
+```
+git clone https://github.com/your-repo/student-management-system.git
+cd student-management-system
+```
+
+2. Install dependencies
+```
+composer install
+```
+
+3. Configure environment
+- Copy `.env` file from `.env.example`
+- Update database configuration:
+```
+database.default.hostname = localhost
+database.default.database = student_management
+database.default.username = db_username
+database.default.password = db_password
+database.default.DBDriver = MySQLi
+```
+
+4. Database setup
+- Create a MySQL database
+- Run migrations:
+```
+php spark migrate
+```
+- Seed initial data (optional):
+```
+php spark db:seed AdminSeeder
+php spark db:seed InitialDataSeeder
+```
+
+5. Set base URL
+In `.env` file, set:
+```
+app.baseURL = 'http://localhost/student-management-system/'
+```
+
+6. Permissions
+Make sure the following directories are writable:
+- `writable/`
+
+Default Login Credentials
+
+Admin Account
+- Username: admin@school.edu
+- Password: Admin@123
+
+Teacher Account
+- Username: teacher@school.edu
+- Password: Teacher@123
+
+Student Account
+- Username: student@school.edu
+- Password: Student@123
+
+Note: Replace these default credentials after the first login for security reasons.
+
+Features and Modules
+
+1. Authentication Module
+- User login/logout
+- Password reset
+- Role-based access control (Admin, Teacher, Student)
+
+2. Admin Dashboard
+- System overview and statistics
+- Quick access to important features
+- Notifications and alerts
+
+3. Student Management
+- Add/edit/delete student records
+- Student profile management
+- Student ID card generation
+
+4. Course Management
+- Create and maintain courses
+- Allocate courses to departments
+- Assign course prerequisites
+- Course scheduling
+
+5. Class Management
+- Generate class sections
+- Allocate students to classes
+- Class timetable management
+- Class attendance tracking
+
+6. Gradebook
+- Track and maintain student grades
+- Calculate grades based on user-defined criteria
+- Generate grade reports
+- Transcript generation
+
+7. Attendance System
+- Daily attendance tracking
+- Attendance reports
+- Low attendance notification
+
+8. Reporting
+- Student performance reports
+- Attendance data
+- Generation of custom reports
+
+9. System Settings
+- Configuration of academic year
+- Setup of grade scale
+- School information management
+- Management of user role and permissions
+
+Additional Features
+
+- Mobile device responsiveness (works on mobile phones)
+- Data export/import function
+- Audit logs for significant actions
+- Support for multiple languages (if set up)
+- REST API for integration with other systems
+
